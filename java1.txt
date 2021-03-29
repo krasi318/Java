@@ -1,0 +1,28 @@
+
+import java.util.Scanner;
+
+class Recktangle{
+
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("A = ");
+        double a = sc.nextDouble();
+
+        System.out.print("B = ");
+        double b = sc.nextDouble();
+
+        if(a <= 0 || b <= 0 ){
+
+            System.out.println("Not valid recktangle");
+
+            return;
+        }
+        double P = (a + b) * 2;
+        double S = a * b;
+
+        System.out.println("P = " + P);
+        System.out.println("S = " + S);
+    }
+}
